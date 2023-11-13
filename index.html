@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body {font-family:Roboto, sans-serif;font-size:16px;padding:30px}
-
 #greetings::after {
   content: attr(data-content);
   padding:10px 15px;
@@ -24,10 +20,10 @@ body {font-family:Roboto, sans-serif;font-size:16px;padding:30px}
 var greetElem = document.querySelector("#greetings"); 
 var curHr = new Date().getHours(); 
 var greetMes = ["Wow! Masih Begadang?", 
-"Selamat Pagi!", 
-"Selamat Siang!", 
-"Selamat Sore!", 
-"Selamat Malam!", 
+"Hello Teams, Selamat Pagi! Semangat Terus hari ini", 
+"Hello Teams, Selamat Siang! Harus Tetap Semangat.", 
+"Hello Teams, Selamat Sore! Siapkan Semangat Untuk Esok Hari.", 
+"Hello Teams, Selamat Malam! Selamat Beristirahat.", 
 "Belum Tidur ya?"]; 
 let greetText = ""; if (curHr < 4) greetText = greetMes[0]; 
 else if (curHr < 10) greetText = greetMes[1]; 
